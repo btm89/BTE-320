@@ -1,0 +1,69 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNQXEKHAJKxTS7N2sPcuKL6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/btm89/BTE-320/blob/main/Class%20Assignment%20%233.%20Bonus\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 28,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "fad3c9ef-8c91-4bc2-e049-0f0fbba414db",
+        "id": "OjkFKtu1zlpr"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hour Fee\n",
+            "1      10\n",
+            "2      10.0\n",
+            "3      12.5\n",
+            "4      15.0\n",
+            "5      17.5\n",
+            "6      20.0\n",
+            "7      20\n",
+            "8      20\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Hour Fee\")\n",
+        "for hour in range(1,9):\n",
+        "  fee = 5 + 2.5 * hour\n",
+        "  if fee < 10:\n",
+        "    fee = 10\n",
+        "  elif fee > 20:\n",
+        "    fee = 20\n",
+        "\n",
+        "  print(f\"{hour}      {fee}\")"
+      ]
+    }
+  ]
+}
